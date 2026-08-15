@@ -30,14 +30,14 @@ const app = express();
 
 const server = http.createServer(app)
 app.use(cors({
-  origin: "https://skillbridge-v0-2-1.onrender.com", 
+  origin: "https://skillbridge-v0-2-1cwl.onrender.com", 
   credentials: true,
 }));
 
 let users = []
 const io = new Server(server, {
   cors: {
-    origin: "https://skillbridge-v0-2-1.onrender.com", 
+    origin: "https://skillbridge-v0-2-1cwl.onrender.com", 
     methods: ["GET", "POST"],
   },
 });
